@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "Category"
-    url: "/categories/"
+  - title: "Home"
+    url: "https://gt-kim@github.io/"
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
@@ -15,6 +15,6 @@ sidebar-category:
  - title: "Category"
    children:
     - title: "Home"
-      url: "/home"
-    #- title: "AI"
-    #  url: "/AI"
+      url: "https://gt-kim@github.io/"
+    - title: "AI"
+      url: "/ai/"
