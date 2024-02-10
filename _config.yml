@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "GT-KIM"
-  avatar           : "/assets/images/paris.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/paris_sorbonne.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "CS/AI Ph. D."
   location         : "Seoul, South Korea"
   email            : "kgt1103211@gmail.com"
