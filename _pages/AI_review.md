@@ -1,8 +1,8 @@
 ---
- title: "AI"
+ title: "AI Review"
  layout: archive
- permalink: /ai/
+ permalink: /ai_review/
 ---
 
-{% assign posts = site.categories.ai %}
+{% assign posts = site.categories.ai_review %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

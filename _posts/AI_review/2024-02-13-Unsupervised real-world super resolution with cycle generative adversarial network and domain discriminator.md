@@ -1,8 +1,16 @@
 ---
 title: "Unsupervised real-world super resolution with cycle generative adversarial network and domain discriminator"
 categories:
- - ai
+ - ai_review
 ---
+
+## 링크
+[Github](https://github.com/GT-KIM/unsupervised-super-resolution-domain-discriminator) [Paper](https://openaccess.thecvf.com/content_CVPRW_2020/papers/w31/Kim_Unsupervised_Real-World_Super_Resolution_With_Cycle_Generative_Adversarial_Network_and_CVPRW_2020_paper.pdf)
+
+## 요약
+전체 모델 구조는 아래와 같다.
+![model](/assets/images/AI_review/20240213/model.png)
+input image, generator, discriminator, loss를 하나의 그림에 올리려고 해서 많이
 
 ## 회상
 이 논문은 2020년에 내가 1저자로 작성한 논문 중 처음으로 publish 된 논문이다. 현재 약 52회의 citation을 받아 내 연구 중 가장 많은 citation을 받은 논문이기도 하다. [NTIRE 2020 Challenge](https://data.vision.ee.ethz.ch/cvl/ntire20/)라는 CVPR Workshop 챌린지에 참가해서 5등을 했었고, 그 결과를 같은 학회에서 발표했다.  
