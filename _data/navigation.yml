@@ -16,7 +16,9 @@ sidebar-category:
    children:
     - title: "Home"
       url: "https://gt-kim.github.io/"
-    - title: "Artificial Intelligence"
-      url: "/ai/"
+    - title: "AI Review"
+      url: "/ai_review/"
+    - title: "AI Tech"
+      url: "/ai_tech/"
     - title: "Daily"
       url: "/daily/"
