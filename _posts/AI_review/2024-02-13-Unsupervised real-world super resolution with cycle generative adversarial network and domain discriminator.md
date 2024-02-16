@@ -3,18 +3,20 @@ title: "Unsupervised real-world super resolution with cycle generative adversari
 categories:
  - ai_review
 ---
-내가 1저자로 2020년에 NTIRE Challenge에 제출했고, CVPR Workshop에서 발표했던 논문이다.
+내가 1저자로 2020년에 NTIRE Challenge에 참여했고, CVPR Workshop에서 발표했던 논문이다.
 
 ## 링크
 [Github](https://github.com/GT-KIM/unsupervised-super-resolution-domain-discriminator) [Paper](https://openaccess.thecvf.com/content_CVPRW_2020/papers/w31/Kim_Unsupervised_Real-World_Super_Resolution_With_Cycle_Generative_Adversarial_Network_and_CVPRW_2020_paper.pdf)
 
 ## 요약
 ### Real-world super resolution
-당시 
+Real-world super resolution은 "실제 저해상도 영상은 대부분 깨끗하지 않고, 노이즈가 있는 저해상도 영상에 super resolution을 적용하면 노이즈가 살아 있거나, 더 심해지는 현상이 발생한다." 라는 문제와 "실제 영상에는 Gaussian noise 뿐만 아니라 다양한 Unknown noise가 존재한다."라는 문제를 해결하기 위해 제안된 task이다. 이 문제들을 해결하기 위해 denoising과 super resolution을 동시에 적용하면서, unknown noise에 대한 unpaired dataset을 사용하여 unsupervised learning으로 학습하는 모델을 연구했다.
 
+### Model structure
 전체 모델 구조는 아래와 같다.
 ![model](/assets/images/AI_review/20240213/model.png)
-input image, generator, discriminator, loss를 하나의 그림에 올리려고 해서 그림이 다소 복잡한데, [참고 논문:Cycle-in-cycle GAN](https://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w13/Yuan_Unsupervised_Image_Super-Resolution_CVPR_2018_paper.pdf)과 기본적인 구조는 동일하고 Real-world Super resolution 성능을 향상시키기 위해 여러 가지를 추가한 논문이 되겠다.
+input image, generator, discriminator, loss를 하나의 그림에 올리려고 해서 그림이 다소 복잡한데, [참고 논문:Cycle-in-cycle GAN](https://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w13/Yuan_Unsupervised_Image_Super-Resolution_CVPR_2018_paper.pdf)과 기본적인 구조는 동일하고 Real-world Super resolution 성능을 향상시키기 위해 여러 가지를 추가한 논문이 되겠다.  
+x는 unknown noise가 섞인 저해상도 이미지이고, z는 clean 고해상도 이미지이다. 
 
 
 ## 회상
