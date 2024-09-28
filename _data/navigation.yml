@@ -20,5 +20,7 @@ sidebar-category:
       url: "/ai_review/"
     - title: "AI Tech"
       url: "/ai_tech/"
+    - title: "Python"
+      url: "/python/"
     - title: "Daily"
       url: "/daily/"
