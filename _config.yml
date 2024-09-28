@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "ko_KR"
-title                    : "Starwise"
+title                    : "Starwise Tech Blog"
 title_separator          : "-"
 subtitle                 : "look forward"# site tagline that appears below site title in masthead
 name                     : "GT-KIM"
