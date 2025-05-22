@@ -3,21 +3,21 @@ title: "Curriculum Vitae"
 categories:
  - introduction
 ---
-## Biography
-### <center> Gwantae Kim </center>
+# <center> Gwantae Kim </center>
+**Staff Engineer, Samsung Electronics, Mobile eXperience (MX) Division, AP R&D Team**  
+**Ph. D. in video information processing, Korea University**  
 
-He received the B.S. degree in mechanical engineering and autonomous driving from
-Korea Aerospace University (KAU), South Korea,
-in 2018. He is currently pursuing the integrated
-M.S. and Ph.D. degree in electrical engineering
-with Korea University, Seoul, South Korea. His
-research interests include acoustic analysis, video
-analysis, and generative model.
-Ph. D. in video information processing
+[email](kgt1103211@gmail.com)  
+[github](https://github.com/GT-KIM)  
+[scholar](https://scholar.google.com/citations?user=kgt1103211)
+
+## Research Interests
+### Multimodal Agentic AI
 
 ## Work Experience
-- Staff Engineer, Samsung Electronics, Mobile eXperience(MX) Division, AP R&D Team (2024.09 ~ Current, 9 months)
-    - Projects
+- Staff Engineer, Samsung Electronics, Mobile eXperience (MX) Division, AP R&D Team
+  - 2024.09 ~ Current (9 months)
+  - Position: Ondevice AI (Mobile), NPU/AI
  
 - Postdoctoral Researcher, Korea University (2024.03 ~ 2024.08, 6 months)
 
