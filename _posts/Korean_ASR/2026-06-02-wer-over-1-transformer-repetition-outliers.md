@@ -9,10 +9,7 @@ toc_label: "목차"
 toc_sticky: true
 ---
 
-> ✍️ **초안(draft)입니다.** `_drafts/`에 있어 라이브에는 발행되지 않습니다.
-> 본문의 outlier 예시·발생률은 OpenKoASR `results/`와 리더보드 실측값입니다. 검토 후 발행하려면 `_posts/Korean_ASR/`로 옮기고 파일명에 날짜를 붙이면 됩니다.
-
-[WER의 한계를 다룬 글](/korean_asr/series/wer-trap-korean-asr-metrics/)에서 WER은 0~1 사이의 비율처럼 느껴진다고 했다. 그런데 사실 WER에는 **상한이 없다.** 한 샘플의 WER이 **3.0, 5.0**도 나온다. 이번 글은 그 "괴물 샘플"의 정체 — **끝 단어 무한 반복(repetition hallucination)** — 와, OpenKoASR이 이걸 어떻게 잡아내는지를 다룬다.
+[WER의 한계를 다룬 글](/korean_asr/series/wer-trap-korean-asr-metrics/)에서 WER은 0~1 사이의 비율처럼 느껴진다고 했다. 그런데 사실 WER에는 **상한이 없다.** 한 샘플의 WER이 **3.0, 5.0**도 나온다. 이번 글은 그 "괴물 샘플"의 정체 — **토큰 무한 반복(repetition hallucination)** — 와, OpenKoASR이 이걸 어떻게 잡아내는지를 다룬다.
 
 ## WER/CER은 1.0을 넘을 수 있다
 
@@ -24,7 +21,7 @@ $$
 
 분자에는 **삽입(I)**이 있다. 정답에 없는 토큰을 모델이 만들어내면 삽입이 쌓인다. 삽입에는 한계가 없으므로, 모델이 정답 길이 $N$보다 훨씬 많은 토큰을 뱉으면 **오류율은 1.0을 가뿐히 넘는다.** 정답이 10글자인데 같은 단어를 200번 반복하면 CER은 20.0이 될 수도 있다.
 
-## 끝 단어가 무한 반복되는 현상
+## 토큰이 무한 반복되는 현상
 
 아래는 **whisper-tiny가 저품질 전화 음성(AIHub D03)을 인식한 실제 outlier**다.
 
@@ -51,7 +48,7 @@ CTC는 프레임마다 토큰(또는 blank)을 내보내고, RNN-T도 입력 프
 
 | 구조 | 정렬 | 반복 환각 위험 |
 | :-- | :-- | :-- |
-| Transformer seq2seq (CE, AR) | 없음(attention) | **높음** — 끝 단어 무한 반복 |
+| Transformer seq2seq (CE, AR) | 없음(attention) | **높음** — 토큰 무한 반복 |
 | CTC | 단조, 프레임 동기 | 낮음 |
 | RNN-T | 단조, 프레임 동기 | 낮음 |
 
@@ -86,7 +83,7 @@ outlier 한 샘플(WER 5.0)이 끼면 1000개 평균이 통째로 흔들린다. 
 
 ## 정리
 
-- WER/CER은 삽입 때문에 **1.0을 넘을 수 있고**, 그 주범은 **끝 단어 무한 반복**이다.
+- WER/CER은 삽입 때문에 **1.0을 넘을 수 있고**, 그 주범은 **토큰 무한 반복**이다.
 - 이는 **AR Transformer + CE** 모델의 구조적 실패 모드로, **CTC/RNN-T엔 잘 없다.**
 - OpenKoASR은 outlier를 **평균에서 제외하되 발생률을 투명하게 공개**해, 정확도와 안정성을 분리해서 본다.
 
