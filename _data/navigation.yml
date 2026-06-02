@@ -16,6 +16,12 @@ sidebar-category:
    children:
     - title: "Home"
       url: "https://gt-kim.github.io/"
+    - title: "Korean ASR Project"
+      url: "/korean_asr/"
+    - title: "└ 본격 시리즈"
+      url: "/korean_asr/series/"
+    - title: "└ 프로젝트 로그"
+      url: "/korean_asr/log/"
     - title: "AI Review"
       url: "/ai_review/"
     - title: "AI Tech"
