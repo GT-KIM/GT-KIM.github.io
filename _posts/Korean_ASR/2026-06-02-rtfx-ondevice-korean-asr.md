@@ -1,4 +1,5 @@
 ---
+lang: ko
 title: "정확도만 높이면 될까 — RTFx와 온디바이스 한국어 ASR"
 categories:
  - korean_asr

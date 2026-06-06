@@ -4,19 +4,18 @@ layout: archive
 
 {{ content }}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<h3 class="archive__subtitle">Recent Posts</h3>
 
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
-
+{% comment %} Home is the English landing — show English posts only. Korean posts live under /ko/. {% endcomment %}
+{% assign en_posts = site.posts | where: "lang", "en" %}
 {% assign entries_layout = page.entries_layout | default: 'list' %}
+
+{% if en_posts.size > 0 %}
 <div class="entries-{{ entries_layout }}">
-  {% for post in posts %}
+  {% for post in en_posts %}
     {% include archive-single.html type=entries_layout %}
   {% endfor %}
 </div>
-
-{% include paginator.html %}
+{% else %}
+<p><em>No English posts yet — they're on the way. In the meantime, browse the <a href="{{ '/ko/' | relative_url }}">한국어 글 →</a></em></p>
+{% endif %}

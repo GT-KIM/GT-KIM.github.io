@@ -1,4 +1,5 @@
 ---
+lang: ko
 title: "한국어 음성 인식에서 WER의 한계와 극복 방법"
 categories:
  - korean_asr

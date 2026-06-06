@@ -18,9 +18,9 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 locale                   : "ko_KR"
 title                    : "Starwise Tech Blog"
 title_separator          : "-"
-subtitle                 : "AI · 음성 인식 · 온디바이스" # site tagline that appears below site title in masthead
+subtitle                 : "Machine learning, engineering, and everything in between" # site tagline that appears below site title in masthead
 name                     : "GT-KIM"
-description              : "AI와 음성 인식, 온디바이스 머신러닝을 다루는 기술 블로그. 논문 리뷰와 한국어 ASR 리더보드 프로젝트(OpenKoASR)를 기록합니다."
+description              : "A tech blog by Gwantae Kim on machine learning, software engineering, and research — deep dives, paper notes, and side projects."
 url                      : "https://GT-KIM.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "GT-KIM/GT-KIM.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -190,14 +190,11 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
@@ -205,7 +202,6 @@ plugins:
 
 # mimic GitHub Pages with --safe
 whitelist:
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
@@ -262,5 +258,6 @@ defaults:
       comments: # true
       share: true
       related: true
+      lang: en # default language; Korean posts override with `lang: ko`
       sidebar:
        nav: "sidebar-category"

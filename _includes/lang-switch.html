@@ -1,0 +1,17 @@
+{% comment %}
+  Language switcher: shows a link to the mirror post in the other language.
+  A post opts in by setting a shared `ref:` key and its `lang:` (en|ko).
+  Renders nothing until a counterpart with the same `ref` exists.
+{% endcomment %}
+{% if page.ref %}
+  {% assign mirror = site.posts | where: "ref", page.ref | where_exp: "p", "p.lang != page.lang" | first %}
+  {% if mirror %}
+    <p class="page__lang-switch notice--info" style="display:inline-block;padding:.4em .8em;">
+      {% if page.lang == "ko" %}
+        🇺🇸 <a href="{{ mirror.url | relative_url }}">Read this in English</a>
+      {% else %}
+        🇰🇷 <a href="{{ mirror.url | relative_url }}">한국어로 읽기</a>
+      {% endif %}
+    </p>
+  {% endif %}
+{% endif %}
