@@ -1,13 +1,42 @@
 ---
-layout: home
-author_profile: true
-sidebar:
-    nav: "sidebar-category"
+layout: splash
+lang: en
+header:
+  overlay_image: /assets/images/hero-starfield.jpg
+  overlay_filter: "rgba(8, 15, 48, 0.45)"
+  actions:
+    - label: "Read the Korean ASR series"
+      url: "/korean_asr/series/"
+    - label: "OpenKoASR leaderboard"
+      url: "https://gt-kim.github.io/open-korean-automatic-speech-recognition/"
+excerpt: "Machine learning, engineering, and everything in between."
+intro:
+  - excerpt: "Hi, I'm **Gwantae** — a CS/AI researcher and engineer. I write about machine learning, software engineering, research papers, and whatever I'm building or digging into. Some posts are deep dives, others short notes."
+feature_row:
+  - title: "OpenKoASR — Korean ASR Leaderboard"
+    excerpt: "An open, reproducible leaderboard comparing Korean speech-recognition models on one pipeline — same data, same normalization, same metrics."
+    url: "https://gt-kim.github.io/open-korean-automatic-speech-recognition/"
+    btn_label: "View the leaderboard"
+    btn_class: "btn--primary"
+  - title: "The Korean ASR Series"
+    excerpt: "Deep dives on evaluating Korean ASR: why WER misleads, repetition hallucinations and outliers, and RTFx for on-device latency."
+    url: "/korean_asr/series/"
+    btn_label: "Read the series"
+    btn_class: "btn--primary"
+  - title: "Reviews, notes & experiments"
+    excerpt: "Paper reviews, engineering notes, and side projects across ML and software. Korean write-ups live under the 한국어 tab."
+    url: "/ko/"
+    btn_label: "Browse all posts"
+    btn_class: "btn--primary"
 ---
 
-Hi, I'm Gwantae — a CS/AI researcher and engineer. This is where I write about
-machine learning, software engineering, research papers, and whatever I happen to be
-building or digging into. Some posts are deep dives, others are short notes.
+{% include feature_row id="intro" type="center" %}
 
-These days I'm building [OpenKoASR](https://gt-kim.github.io/open-korean-automatic-speech-recognition/),
-an open leaderboard for Korean speech recognition — but you'll find a bit of everything here.
+{% include feature_row %}
+
+<h3 class="archive__subtitle" id="latest">Latest writing</h3>
+<div class="entries-list">
+  {% for post in site.posts limit:3 %}
+    {% include archive-single.html type="list" %}
+  {% endfor %}
+</div>
