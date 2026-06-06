@@ -1,4 +1,6 @@
 ---
-title: "Category"
-permalink: /categories
-
+title: "Categories"
+layout: categories
+permalink: /categories/
+author_profile: true
+---
