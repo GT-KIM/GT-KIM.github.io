@@ -1,4 +1,5 @@
 ---
+lang: ko
 title: "WER이 1.0을 넘을 때 — Transformer ASR의 반복 환각과 outlier 처리"
 categories:
  - korean_asr
