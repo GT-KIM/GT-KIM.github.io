@@ -3,6 +3,9 @@ title: "한국어 글"
 layout: archive
 permalink: /ko/
 author_profile: true
+header:
+  overlay_image: /assets/images/hero-starfield.jpg
+  overlay_filter: "rgba(8, 15, 48, 0.45)"
 sidebar:
     nav: "sidebar-category"
 ---

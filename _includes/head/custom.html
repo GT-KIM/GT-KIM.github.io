@@ -46,6 +46,34 @@
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(30, 64, 175, .28);
   }
+
+  /* Per-post language switcher — same pill language as the masthead tabs */
+  .page__lang-switch { margin: 0 0 1.2em; }
+  .page__lang-switch a {
+    display: inline-block;
+    padding: .28em 1.05em;
+    border: 1.5px solid #1e40af;
+    border-radius: 2em;
+    color: #1e40af;
+    font-weight: 600;
+    font-size: .8em;
+    text-decoration: none;
+    transition: background-color .18s ease, color .18s ease, transform .12s ease, box-shadow .18s ease;
+  }
+  .page__lang-switch a i { margin-right: .4em; }
+  .page__lang-switch a:hover {
+    background-color: #1e40af;
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(30, 64, 175, .28);
+  }
+
+  /* Consistent brand accent under titles on content/list pages (not heroes) */
+  #main .page__title,
+  #main .archive__subtitle {
+    border-bottom: 3px solid #1e40af;
+    padding-bottom: .3em;
+  }
 </style>
 
 <!-- end custom head snippets -->
