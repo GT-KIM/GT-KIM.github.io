@@ -5,5 +5,13 @@ search: false
 
 @charset "utf-8";
 
+// ==========================================================================
+// Brand overrides (Starwise) — defined before the skin/main imports so the
+// skin's `!default` values don't win. Gives every page one consistent palette.
+// ==========================================================================
+$primary-color: #1e40af;    // brand blue (matches favicon + hero)
+$link-color: #1e40af;       // hover shade is auto-derived (darker blue) by the theme
+$footer-background-color: #1e40af;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
