@@ -7,9 +7,9 @@ categories:
 **Staff Engineer, Samsung Electronics, Mobile eXperience (MX) Division, AP R&D Team**  
 **Ph. D. in video information processing, Korea University**  
 
-[email](kgt1103211@gmail.com)  
+[email](mailto:kgt1103211@gmail.com)  
 [github](https://github.com/GT-KIM)  
-[scholar](https://scholar.google.com/citations?user=kgt1103211)
+[scholar](https://scholar.google.co.kr/citations?user=ujCB8lsAAAAJ&hl=ko)
 
 ## Research Interests
 ### Multimodal Agentic AI
@@ -33,8 +33,6 @@ categories:
   - Grade: 3.65
 
 ## Current Projects
-### Projects
-
 ### Personal Projects
 - Multimodal Human-AI Interaction
 - Sound Event Localization & Detection (DCASE Challenge task 3)
@@ -47,13 +45,8 @@ categories:
 - Perception/Response Technology Research for AI avatar
 - Development of AI Avatar for AI assistant
 - Seismic Event Detection & Classification
-  <img align="left" width="1024px" height="128px" src="../assets/images/paris.jpg">
   - 2018.09 ~ 2021.12 (2 years 6 months)
-  - Funding (Meteorological/Earthquake See-At Technology Development Research under Grant KMI2018-09610)
-  - Project Overview
-    eeee
-  - Publications
-    - 1
+  - Funding: Meteorological/Earthquake See-At Technology Development Research (Grant KMI2018-09610)
 
 ### Personal Projects
 - Single Image Super Resolution (NTIRE Challenge)

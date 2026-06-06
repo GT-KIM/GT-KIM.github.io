@@ -1,5 +1,5 @@
 ---
-title: "AI Tech category test page"
+title: "HuggingFace Trainer 없이 DeepSpeed로 학습하기"
 categories:
  - ai_tech
 ---
