@@ -21,4 +21,31 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 {% endif %}
 
+<!-- Language tabs (English / 한국어): make them inviting, button-like -->
+<style>
+  .greedy-nav .visible-links .masthead__menu-item a,
+  .greedy-nav .hidden-links .masthead__menu-item a {
+    display: inline-block;
+    margin: 0 .2em;
+    padding: .28em 1.05em;
+    border: 1.5px solid #1e40af;
+    border-radius: 2em;
+    color: #1e40af;
+    font-weight: 700;
+    line-height: 1.5;
+    transition: background-color .18s ease, color .18s ease, transform .12s ease, box-shadow .18s ease;
+  }
+  .greedy-nav .visible-links .masthead__menu-item a:before,
+  .greedy-nav .hidden-links .masthead__menu-item a:before { display: none; }
+  .greedy-nav .masthead__menu-item a i { margin-right: .4em; }
+  .greedy-nav .visible-links .masthead__menu-item a:hover,
+  .greedy-nav .visible-links .masthead__menu-item a:focus,
+  .greedy-nav .hidden-links .masthead__menu-item a:hover {
+    background-color: #1e40af;
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(30, 64, 175, .28);
+  }
+</style>
+
 <!-- end custom head snippets -->

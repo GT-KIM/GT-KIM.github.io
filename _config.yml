@@ -19,8 +19,8 @@ locale                   : "ko_KR"
 title                    : "Starwise Tech Blog"
 title_separator          : "-"
 subtitle                 : "Machine learning, engineering, and everything in between" # site tagline that appears below site title in masthead
-name                     : "GT-KIM"
-description              : "A tech blog by Gwantae Kim on machine learning, software engineering, and research — deep dives, paper notes, and side projects."
+name                     : "Starwise"
+description              : "A tech blog by Starwise on machine learning, software engineering, and research — deep dives, paper notes, and side projects."
 url                      : "https://GT-KIM.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "GT-KIM/GT-KIM.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -104,7 +104,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "GT-KIM"
+  name             : "Starwise"
   avatar           : "/assets/images/paris_sorbonne.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "CS/AI Ph. D."
   location         : "Seoul, South Korea"
