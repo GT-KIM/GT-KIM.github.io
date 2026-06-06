@@ -1,8 +1,8 @@
 # main links
 main:
-  - title: "English"
+  - title: "<i class='fas fa-globe'></i>English"
     url: "/"
-  - title: "한국어"
+  - title: "<i class='fas fa-globe'></i>한국어"
     url: "/ko/"
 
 sidebar-category:
