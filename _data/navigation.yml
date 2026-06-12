@@ -16,6 +16,8 @@ sidebar-category:
       url: "/korean_asr/series/"
     - title: "└ 프로젝트 로그"
       url: "/korean_asr/log/"
+    - title: "ASR의 진화 시리즈"
+      url: "/asr_evolution/"
     - title: "AI Review"
       url: "/ai_review/"
     - title: "AI Tech"
