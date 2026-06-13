@@ -32,7 +32,7 @@ toc_sticky: true
 
 예정된 글:
 
-1. **고전 ASR의 해부** — GMM-HMM, 음향모델·발음사전·언어모델, WFST 디코딩
+1. **[고전 ASR의 해부](/asr_evolution/classic-asr-anatomy/)** — GMM-HMM, 음향모델·발음사전·언어모델, WFST 디코딩
 2. **DNN-HMM 하이브리드 시대** — 딥러닝이 음향모델을 대체하다
 3. **CTC** — 정렬 없는 학습의 시작, 그리고 조건부 독립 가정의 한계
 4. **LAS와 Attention Seq2Seq** — 강력하지만 스트리밍이 안 되는 모델
