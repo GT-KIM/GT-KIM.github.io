@@ -70,4 +70,4 @@ ASR 문제의 뿌리를 보려면, 먼저 음성인식이 애초에 **어떻게 
 
 ---
 
-*이 글은 [ASR의 진화 시리즈](/asr_evolution/)의 입니다. 전체 목차와 연재 순서는 [로드맵](/asr_evolution/asr-evolution-series-roadmap/)를 참조 바랍니다.*
+*이 글은 [ASR의 진화 시리즈](/asr_evolution/)의 서론입니다. 전체 목차와 연재 순서는 [로드맵](/asr_evolution/asr-evolution-series-roadmap/)을 참조 바랍니다.*
