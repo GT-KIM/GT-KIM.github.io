@@ -18,7 +18,7 @@ toc_sticky: true
 
 그래서 이 시리즈를 쓴다. 고전 ASR부터 Speech LLM, On-device ASR까지를 하나의 이야기로 엮는 장기 연재이고, 완결되면 책 한 권 분량이 되도록 설계했다.
 
-> 본격적인 기술사에 들어가기 전에, "멀티모달 LLM 시대에 음성 인식이 왜 여전히 필요한가"를 먼저 짚는 프롤로그를 따로 두었다 — [멀티모달 LLM 시대에 음성 인식은 왜 필요한가](/asr_evolution/why-asr-in-multimodal-llm-era/).
+> "멀티모달 LLM 시대에 음성 인식이 왜 여전히 필요한가"라는 더 큰 질문은 별도의 [ASR 연구](/asr_research/) 노트 — [멀티모달 LLM 시대에 음성 인식은 왜 필요한가](/asr_research/why-asr-in-multimodal-llm-era/) — 에서 다룬다.
 
 ## 이 시리즈가 답하려는 세 가지 질문
 

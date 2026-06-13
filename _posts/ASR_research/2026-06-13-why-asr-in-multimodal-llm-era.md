@@ -1,14 +1,14 @@
 ---
 lang: ko
-title: "멀티모달 LLM 시대에 음성 인식은 왜 필요한가 — 자연어를 거친다는 것의 의미 [ASR의 진화 · 프롤로그]"
+title: "멀티모달 LLM 시대에 음성 인식은 왜 필요한가 — 자연어를 거친다는 것의 의미"
 categories:
- - asr_evolution
+ - asr_research
 toc: true
 toc_label: "목차"
 toc_sticky: true
 ---
 
-> **ASR의 진화 시리즈**의 프롤로그다. 본격적인 기술사 연재에 앞서, "그래서 지금 왜 음성 인식인가"라는 질문에 먼저 답한다. 시리즈 전체 그림은 [로드맵](/asr_evolution/asr-evolution-series-roadmap/)을 참고.
+> 멀티모달 LLM 시대에 음성 인식의 자리를 묻는 ASR 연구 노트다. 기술의 발전사를 차근차근 따라가고 싶다면 [ASR의 진화 시리즈](/asr_evolution/)도 함께 보면 좋다.
 
 ## 현대 인공지능의 발전
 
@@ -70,10 +70,10 @@ Computer Vision 연구자에게는 익숙할 이미지 분류 문제를 생각�
 
 LLM에게 음성 인식의 자연어 결과를 전달하는 것이 최적의 솔루션은 아니다. 자연어를 한 번 거치는 순간, 이미지 분류에서 세부 정보가 날아갔던 것과 똑같은 손실이 음성에서도 일어난다. 하지만 그렇다고 음성 인식이 무용한 것은 아니다. UX 관점에서 **설명 가능성**을 위해 음성 인식 결과가 필요할 수 있으며, 한 번 뱉으면 지우기 어려운 음성의 특성상 **녹음에서 의도를 파악하는 일** 또한 중요하다.
 
-이 프롤로그가 던진 질문 — "자연어를 거친다는 것은 무엇을 잃는가, 그리고 음성 인식은 그럼에도 왜 필요한가" — 은 이 시리즈 전체를 관통한다. 그 답을 제대로 하려면, 먼저 음성 인식이라는 기술이 어디에서 출발했는지를 알아야 한다. 다음 글부터 본격적으로 그 역사를 따라간다.
+여기서 던진 질문 — "자연어를 거친다는 것은 무엇을 잃는가, 그리고 음성 인식은 그럼에도 왜 필요한가" — 에 제대로 답하려면, 먼저 음성 인식이라는 기술이 어디에서 출발했는지를 알아야 한다. 그 역사는 [ASR의 진화 시리즈](/asr_evolution/)에서 [고전 ASR의 해부](/asr_evolution/classic-asr-anatomy/)부터 차근차근 따라간다.
 
 ---
 
-*이 글은 [ASR의 진화 시리즈](/asr_evolution/)의 프롤로그다. 전체 목차와 연재 순서는 [로드맵](/asr_evolution/asr-evolution-series-roadmap/)에서 볼 수 있다. 첫 본문은 [고전 ASR의 해부](/asr_evolution/classic-asr-anatomy/)다.*
+*이 글은 [ASR 연구](/asr_research/) 노트 중 하나다. 음성 인식 기술의 발전사를 다루는 [ASR의 진화 시리즈](/asr_evolution/)와 함께 읽으면 좋다.*
 
 [^mehrabian]: Mehrabian, A. (1981). *Silent Messages: Implicit Communication of Emotions and Attitudes*. Wadsworth. — 흔히 "메라비언 법칙(7-38-55 규칙)"으로 인용되지만, 원 연구는 감정·태도가 모순되게 전달될 때에 한정된 실험 결과임에 유의.
